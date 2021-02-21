@@ -4,6 +4,7 @@
 <title>Bjørn Berge</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
   box-sizing: border-box;
@@ -13,30 +14,47 @@
 body {
   font-family: Arial;
   margin: 0;
-  color: white
+  color: white;
+  padding:5%;
+  background-color: #1f1f1f;
 }
 
 /* Header/logo Title */
 .header {
-  padding: 60px;
-  text-align: center;
-  background: #1f1f1f;
-  color: white;
+  padding: 10%;
+  text-align:start;
+  text-shadow: #f6f4e6 1px 0 10px;
+  background-image:url(bjornwide2.jpg);
+  background-position: center; 
+  color: #181818;
+ 
+  
+  
+  
+  
 }
 
 /* Style the top navigation bar */
 .navbar {
   display: flex;
   background-color: #333;
+  flex-direction: row;
+  
+  
+  
 }
 
 /* Style the navigation bar links */
 .navbar a {
   color: white;
-  padding: 14px 20px;
+  padding: 24px 20px;
   text-decoration: none;
-  text-align: center;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+
 }
+
 
 /* Change color on hover */
 .navbar a:hover {
@@ -46,7 +64,7 @@ body {
 
 /* Column container */
 .row {  
-  display: flex;
+  display: row;
   flex-wrap: wrap;
 }
 
@@ -88,10 +106,26 @@ body {
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-  .row, .navbar {   
+  .row,  {   
     flex-direction: column;
+    
+    
+  }
+  .navbar a{ 
+  
+  float:center;
+  flex-direction:column;
+  width: 50;
+  font-size:60% ;
+  padding: 10px 10px
+  
+  
+  
   }
 }
+
+    
+
 </style>
 </head>
 <body>
@@ -104,16 +138,23 @@ Note -->
 
 <!-- Header -->
 <div class="header">
-  <h1>Bjørn Berge Homepage</h1>
-  <p>Demo</p>
+  <!--  TEST UTEN
+    <img src="bjornwide.jpg"> 
+  -->
+  <h1>Bjørn Berge Official Homepage </h1>
+  
 </div>
 
 <!-- Navigation Bar -->
 <div class="navbar">
-  <a href="#">Facebook</a>
-  <a href="#">Instagram</a>
-  <a href="#">Spotify</a>
-  <a href="#">YouTube</a>
+  <a href="https://www.facebook.com/stringmachine68">Facebook<i class="fa fa-fw fa-facebook-f"></i></a>
+  
+  <a href="https://www.instagram.com/bjorn_berge_stringmachine">Instagram <i class="fa fa-fw fa-instagram"></i></a>
+  <a href="https://open.spotify.com/artist/7LwAizR0FcWKzkr3NVKog3?si=qf1gsRjERJSpZtOAiMWbcA">Spotify   <i class="fa fa-fw fa-spotify"></i></a>
+  <a href="https://www.youtube.com/user/BjornBergeTV">YouTube <i class="fa fa-fw fa-youtube"></i></a>
+
+  
+  
 </div>
 
 <!-- The flexible grid (content) -->
@@ -121,7 +162,9 @@ Note -->
   <div class="side">
     <h2>About Me</h2>
     <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
+    <div>
+    <img src="wide.jpg" style="max-width:100%">
+      </div>
     <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
     <h3>More Text</h3>
     <p>Lorem ipsum dolor sit ame.</p>
