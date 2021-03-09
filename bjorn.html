@@ -5,219 +5,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="bjorn.css">
 
-<style>
-
-* {
-  box-sizing: border-box;
-  box-sizing: border-box;
-}
-a {
-  color:white;
-  text-decoration: none;
-}
-a:hover {
-  background-color: #ddd;
-  color: black;
-}
-/* Stil body */
-body {
-  font-family: Arial;
-  margin: 0;
-  color: white;
-  padding:5%;
-  background-color: #1f1f1f;
-}
-
-/* Header/logo tittel */
-.header {
-  padding: 10%;
-  text-align:start;
-  text-shadow: #f6f4e6 1px 0 10px;
-  background-image:url(bjornwide2.jpg);
-  background-position: center; 
-  color: #181818;
-}
-
-/* Navigering */
-.navbar {
-  display: flex;
-  background-color: #333;
-  flex-direction: row;
-  
-  
-  
-}
-
-/* navbar linker */
-.navbar a {
-  color: white;
-  padding: 24px 20px;
-  text-decoration: none;
-  margin: 0 auto;
-  display: table;
-  table-layout: fixed;
-
-}
-
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/*  Column container */
-
-.row {  
-  display: row;
-  flex-wrap: wrap;
-}
-
-
-
-/* Main column */
-.main {
-  display:flex;
-  background-color: #181818;
-  padding: 0px;
-  flex-direction: row;
-  justify-content: space-between;
-}
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  
-  
-  background-color: #181818;
-  padding: 20px;
-  float:left;
-  max-width: 50%;
-}
-.side2 {
-  
-  
-  background-color: #181818;
-  padding: 20px;
-  max-width: 50%;
-  
-  
-  
-  float:right;
-  
-}
-.gigBoks {
-  background-color: #1f1f1f;
-  
-  width: auto;
-  padding: 4%;
-  display:flex;
-  
-  flex-direction:row;
-}
-.dato{
-  flex-direction: column;
-  text-align: start;
-  width: auto;
-}
-
-.gigBeskrivelse{
-  
-  width: 100%;
-  text-align: center;
-  align-self: center;
-  
-}
-.gigBilett{
-  text-align:right;
-  align-self: center;
-  padding:10px;
-  background-color:#333;
-  color:#ddd;
-  
-}
-.gigBilett:hover{
-  background-color:#ddd;
-  color:black;
-}
-.gigIntro{
-  padding:5px;
-
-  
-  text-align: center;
-}
-
-/* Fake image, just for this example */
-
-
-.webdesign {
-  color:grey;
-  text-align: end;
-}
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #333333;
-  flex-direction: row;
-}
-/* Footer linker */
-.footerlink {
-  color: white;
-  padding: 24px 20px;
-  text-decoration: none;
-  margin: 0 auto;
-  display: table;
-  table-layout: fixed;
-}
-.footerlink:hover {
-  background-color: #ddd;
-  color: black;
-}
-.button {
-  background-color: #1f1f1f;
-  color:white;
-  border:0;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row, .main  {   
-    flex-direction: column;
-  }
-  .navbar a{ 
-  
-  float:center;
-  flex-direction:column;
-  width: 50;
-  font-size:60% ;
-  padding: 10px 10px
-  
-  }
-  .side, .side2 {
-    max-width: 100%;
-  }
-}
-
-    
-
-</style>
 </head>
 <body>
 
-<!-- 
-<div style="background:yellow;padding:5px">
-  <h4 style="text-align:center">Resize the browser window to see the responsive effect.</h4>
-</div>
-Note -->
-
 <!-- Header -->
 <div class="header">
-  <!--  TEST UTEN
-    <img src="bjornwide.jpg"> 
-  -->
-  <h1>Bjørn Berge Official Homepage </h1>
   
+  <h1>Bjørn Berge Official Homepage </h1>
+  <div className="latestAlbum"> 
+    <a href="https://grappa.no/no/albums/blue-mood-records/heavygauge/">
+      <img src="bb200x200.jpeg"><h5>New album <br> "Heavy Gauge"</h5></img>
+    </a>
+  </div>
 </div>
 
 <!-- Navigation Bar -->
@@ -253,26 +54,43 @@ Note -->
         <a href="https://grappa.no/no/albums/blue-mood-records/heavygauge/">Buy music</a>
       </div>
       <div class="gigIntro">
-        Kommende konserter:
+        Upcoming concerts
       </div>
       </div>
 
       <!--  EN KONSERT  
         <div class= "gigBoks">
-          <div class="dato">
-            23 <br>
-            Feb
-          </div>
-          <div class="gigBeskrivelse">
-            Slaktehuset
-          </div>
-          <div class="gigBilett">
-            Billett
-          </div>
-      </div> !  -->
+        <div class="dato">
+          26 <br>
+          Mar
+        </div>
+        <div class="gigBeskrivelse">
+          Bømlo Musikkfabrikk
+        </div>
+        <div class="gigBilett">
+          <a href="https://billetto.no/e/bjorn-berge-bomlo-musikkfabrikk-billetter-481735">
+          <i class="fa fa-ticket" aria-hidden="true"></i>Tickets</a></a>
+        </div>
+    </div> !  -->
 
 
-           
+      <div class= "gigBoks">
+        <div class="dato">
+          26 <br>
+          Mar
+        </div>
+        <div class="gigBeskrivelse">
+          BJØRN BERGE // Bømlo Musikkfabrikk
+        </div>
+        <div class="gigBilett">
+          <a href="https://billetto.no/e/bjorn-berge-bomlo-musikkfabrikk-billetter-481735">
+          <i class="fa fa-ticket" aria-hidden="true"></i>Tickets</a></a>
+        </div>
+    </div>
+
+        <!-- skal kanskje ikke med?
+
+        
           <div class= "gigBoks">
             <div class="dato">
               05 <br>
@@ -287,35 +105,135 @@ Note -->
                 <i class="fa fa-ticket" aria-hidden="true"></i>Tickets</a>
             </div>
             </div>
+          -->
             
 
-             
-          <div class= "gigBoks">
-            <div class="dato">
-              23 <br>
-              Feb
-            </div>
-            <div class="gigBeskrivelse">
-              Slaktehuset
-            </div>
-            <div class="gigBilett">
-              Tickets coming
-            </div>
-            </div>
+            <div class= "gigBoks">
+              <div class="dato">
+                01 <br>
+                Apr
+              </div>
+              <div class="gigBeskrivelse">
+                BJØRN BERGE // Jæren Bluesklubb
+              </div>
+              <div class="gigBilett">
+                <a href="https://goticket.no/events/1060/bj-rn-berge">
+                <i class="fa fa-ticket" aria-hidden="true"></i>Tickets</a></a>
+              </div>
+          </div>
 
-            
           <div class= "gigBoks">
             <div class="dato">
-              11 <br>
-              Mar
+              16 <br>
+              Apr
             </div>
             <div class="gigBeskrivelse">
-              Slaktehuset
+              BJØRN BERGE // Kreti & Pleti
             </div>
             <div class="gigBilett">
-              <a href="www.ticketco.com"Billett>Tickets coming</a>
+              <a href="https://kretiogpleti.ticketco.events/no/en/m/e/bjoern_berge">
+              <i class="fa fa-ticket" aria-hidden="true"></i>Tickets</a></a>
             </div>
-            </div>
+        </div>
+
+        <div class= "gigBoks">
+          <div class="dato">
+            17 <br>
+            Apr
+          </div>
+          <div class="gigBeskrivelse">
+            BJØRN BERGE // Lillehammer Mikrobryggeri
+          </div>
+          <div class="gigBilett">
+            <a href="#">
+            <i class="fa fa-ticket" aria-hidden="true"></i>Tickets</a></a>
+          </div>
+      </div>
+
+      <div class= "gigBoks">
+        <div class="dato">
+          24 <br>
+          Apr
+        </div>
+        <div class="gigBeskrivelse">
+          BJØRN BERGE // Central
+        </div>
+        <div class="gigBilett">
+          <a href="https://tikkio.com/tickets/21320-bjorn-berge-central">
+          <i class="fa fa-ticket" aria-hidden="true"></i>Tickets</a></a>
+        </div>
+    </div>
+
+    <div class= "gigBoks">
+      <div class="dato">
+        08 <br>
+        May
+      </div>
+      <div class="gigBeskrivelse">
+        BJØRN BERGE // Høvleriet
+      </div>
+      <div class="gigBilett">
+        <a href="https://www.nordvegen.no/event/bjorn-berge/">
+        <i class="fa fa-ticket" aria-hidden="true"></i>Tickets</a></a>
+      </div>
+  </div>
+
+  <div class= "gigBoks">
+    <div class="dato">
+      21 <br>
+      May
+    </div>
+    <div class="gigBeskrivelse">
+      BJØRN BERGE // The Note Clubscene
+    </div>
+    <div class="gigBilett">
+      <a href="#">
+      <i class="fa fa-ticket" aria-hidden="true"></i>Tickets</a></a>
+    </div>
+</div>
+
+<div class= "gigBoks">
+  <div class="dato">
+    22 <br>
+    May
+  </div>
+  <div class="gigBeskrivelse">
+    BJØRN BERGE // ROCKERS
+  </div>
+  <div class="gigBilett">
+    <a href="https://lucky13.ticketco.events/no/en/e/bjoern_berge_solo">
+    <i class="fa fa-ticket" aria-hidden="true"></i>Tickets</a></a>
+  </div>
+</div>
+          
+            
+<div class= "gigBoks">
+  <div class="dato">
+    25 <br>
+    Jun
+  </div>
+  <div class="gigBeskrivelse">
+    BJØRN BERGE // Flasken Scene
+  </div>
+  <div class="gigBilett">
+    <a href="https://www.facebook.com/events/235184471603430/">
+    <i class="fa fa-ticket" aria-hidden="true"></i>Tickets</a></a>
+  </div>
+</div>
+
+<div class= "gigBoks">
+  <div class="dato">
+    01 <br>
+    Sep
+  </div>
+  <div class="gigBeskrivelse">
+    BJØRN BERGE // BlygeHarry
+  </div>
+  <div class="gigBilett">
+    <a href="https://tikkio.com/tickets/20804-bjorn-berge-solo-hos-blygeharry">
+    <i class="fa fa-ticket" aria-hidden="true"></i>Tickets</a></a>
+  </div>
+</div>
 
   </div>
   </div>
@@ -324,7 +242,7 @@ Note -->
 
 <!-- Footer -->
 <div class="footer">
-  <button class="button" onclick="myFunction()"><h2>Booking? Click here!</h2></button>
+  <button class="button" onclick="myFunction()"><h2>Booking</h2></button>
   <script>
     function myFunction() {
       var x = document.getElementById("booking");
